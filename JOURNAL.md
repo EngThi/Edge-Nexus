@@ -45,3 +45,17 @@ I had to completely unroute the board and do everything mannualy. This turned in
 ### Notes & Next steps 
 - This was the hardest phase yet (software auto-routers don't understand physical isolation requiremnts... I didn't configured it that way, but I think it would cause some problems aniway).
 - Now I'll i port the `3D file`into **OnShape** to begin the mechanical enclousure design, focusing on thermal dissipation for high-performance SoCs (I think it must be that).
+
+## 2026-03-03 to 2026-03-06 - Basically the enclousure, Cyberdeck vibe
+
+**Focus:** Mechanical CAD design, thermal managment for AI processors and EMI mitigation.
+
+### Transition to mechanical engineering 
+With the `Edge Nexus`PCB fully routed, next I create a physical environment that could handle the heat and connectivity of an Edge AI and domestic multi-service brain. Primarily targeting a SoC like RK3588 that would later develop a complete component/board for this use, but later studying and remembering that **`professional systems use NVIDIA chips`**, I think this will be the ideal solution.
+
+I imported the `.STEP`file to OnShape and designed a modular, cyberdeck-style split chassis.
+
+
+![image](assets/developing_the_enclosure.png)
+
+![image](assets/complete_render_enclousure.png)
