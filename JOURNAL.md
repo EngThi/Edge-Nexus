@@ -59,3 +59,24 @@ I imported the `.STEP`file to OnShape and designed a modular, cyberdeck-style sp
 ![image](assets/developing_the_enclosure.png)
 
 ![image](assets/complete_render_enclousure.png)
+
+_I also had to fiz the Mounting Holes in the PCB in EasyEDA. Later when I export all the docs from the site I'll update the things here_
+
+# 2026-03-07 - Design polish & NVIDIA pivot
+
+Today I didn’t touch any traces, but focused on polishing the product around the PCB.
+I finalized the first pass of the industrial enclosure and realized that my Edge Nexus shield and case can be reused with the **`NVIDIA Jetson Orin Nano Super Developer Kit`**, not just RK3588/Orange Pi. The official dev kit already includes a professional carrier board, so my role is to provide an industrial isolation layer and a rugged, EMI‑aware housing around it.
+
+![image](assets/NVIDIA_JETSON_NANO.png)
+
+I still need to refine mounting points, clearances and I/O cutouts to match the real Jetson dimensions, but the overall architecture (split data/power sides, standoffs at Z=35 mm, and fan tunnel) is compatible. Next step is to stylize the PCB silkscreen and enclosure and then add one more small, fully custom hardware module to increase the amount of hands‑on soldering and assembly in the project.
+
+# 2026-03-08 to 09 - Front HMI Board: Routing & Design
+
+> Today I completed the PCB routing for the Edge Nexus Front HMI module. To make it a realistic piece of industrial hardware, I went with a 70x20mm 'stick' form factor
+
+A engineering thing here was trace width managment. Since the 4 WS2812B LEDs. I routed the 5V and GND with thicker traces in addition to routing the other NETs.
+
+> I also poured a ground plane to improve EMI shielding and a little of silkscreen. This parts i did in **KiCad**, I'll study how this app works. _I think thats it..._
+
+![image](assets/frontPCB.png)
