@@ -15,6 +15,16 @@ Integrated LM2596 buckconverter stage. It steps down 12-19V (from laptop bricks)
 - **Universal Header:** Standard 40-pin (2x20) interface, making it compatible with most modern ARM based single-board microcomputers (or others systems ARM, SoCs).
 
 
+### Project Structure
+
+*   `/Hardware`: Contains all the hardware design files.
+    *   `/Hardware/3D_Models`: Contains the 3D models of the enclosure.
+    *   `/Hardware/Fabrication`: Contains the manufacturing files (Gerber, BOM, Pick and Place).
+    *   `/Hardware/PCB`: Contains the PCB design files.
+    *   `/Hardware/Schematics`: Contains the schematic files.
+*   `/Docs`: Contains the documentation for the project.
+    *   `/Docs/assets`: Contains the images and other assets for the documentation.
+
 ### 📝 Devlogs
 Check the `JOURNAL.md`for technical updates and engineering decisions.
 
