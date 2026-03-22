@@ -2,7 +2,7 @@
 
 **A custom carrier-shield and rugged enclosure for the NVIDIA Jetson Orin Nano Super.**
 
-![Banner](Docs/assets/complete_render_enclousure.png)
+![Banner](Docs/assets/assembly_view.png)
 
 ## 🚀 The Vision
 
@@ -26,6 +26,9 @@ Originally designed for generic ARM SoCs (RK3588), the project **pivoted to the 
 ### Mechanical Engineering (OnShape)
 The enclosure features integrated mounting bosses, internal standoffs at Z=35mm, and optimized airflow paths to prevent thermal throttling under high AI workloads.
 - **[OnShape Public Document Link](https://cad.onshape.com/documents/94f51a65c203ef61216a8e76/w/3996b9a7978ffab042ea39f4/e/1a9b65c9926a8d71aaf1da83?renderMode=0&uiState=69c037fa21771c3657426373)**
+
+![Full Render](Docs/assets/full_case_render.png)
+*Complete Enclosure Render.*
 
 ## 🛒 Replication Cost & BOM
 
