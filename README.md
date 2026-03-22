@@ -17,6 +17,7 @@ Integrated LM2596 buckconverter stage. It steps down 12-19V (from laptop bricks)
 
 ### Project Structure
 
+*   `BOM.csv`: Complete project Bill of Materials (Main).
 *   `/Hardware`: Contains all the hardware design files.
     *   `/Hardware/3D_Models`: Contains the 3D models of the enclosure.
     *   `/Hardware/Fabrication`: Contains the manufacturing files (Gerber, BOM, Pick and Place).
