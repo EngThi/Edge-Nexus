@@ -1,0 +1,19 @@
+Category,Quantity,Component,Designator,Manufacturer,Part Number,Supplier,Link
+Computing,1,NVIDIA Jetson Orin Nano Super Developer Kit,U1 (Main),NVIDIA,945-13766-0000-000,Arrow,https://www.arrow.com/en/products/945-13766-0000-000/nvidia.html
+Power,1,LM2596S-ADJ(UMW),U1 (Shield),UMW,C347423,LCSC,https://www.lcsc.com/product-detail/DC-DC-Converters_UMW-友台半导体-LM2596S-ADJ-UMW_C347423.html
+Isolation,4,PC817C Optocoupler,U3-U6,GOODWORK,C3025164,LCSC,https://www.lcsc.com/product-detail/Optoisolators-Transistor-Photovoltaic-Output_GOODWORK-PC817C_C3025164.html
+HMI,4,WS2812B-V5 RGB LED,LED1-LED4,worldsemi,C2846931,LCSC,https://www.lcsc.com/product-detail/RGB-LEDs-Built-in-IC_worldsemi-WS2812B-V5_C2846931.html
+HMI,1,B3F-4055 Tactile Switch,KEY1,OMRON,C84931,LCSC,https://www.lcsc.com/product-detail/Tactile-Switches_OMRON-B3F-4055_C84931.html
+Connectors,1,40-pin Female Header (PC104),H1 (Shield),BOOMELE,C35165,LCSC,https://www.lcsc.com/product-detail/Female-Headers_BOOMELE-C35165_C35165.html
+Connectors,4,KF128-5.0-2P Screw Terminal,U7-U10,KEFA,C474950,LCSC,https://www.lcsc.com/product-detail/Screw-Terminal-Blocks_KEFA-KF128-5.0-2P_C474950.html
+Connectors,1,2.54mm 2*5p Female Header,H1 (HMI),BOOMELE,C30419,LCSC,https://www.lcsc.com/product-detail/Female-Headers_BOOMELE-C30419_C30419.html
+Connectors,1,2.54mm-2P Connector,CN1,SHOU HAN,C5368775,LCSC,https://www.lcsc.com/product-detail/Wire-To-Board-Connector_SHOU-HAN-2.54mm-2P-ZZ_C5368775.html
+Discrete,1,2N7002 MOSFET,Q1,CBI,C51315010,LCSC,https://www.lcsc.com/product-detail/MOSFETs_CBI-2N7002_C51315010.html
+Discrete,1,1N5822 Schottky Diode,D1,LRC,C82806,LCSC,https://www.lcsc.com/product-detail/Schottky-Diodes_LRC-1N5822_C82806.html
+Passives,1,100uH Inductor,U2,SHOU HAN,C2929505,LCSC,https://www.lcsc.com/product-detail/Inductors-SMD_SHOU-HAN-CYH127-100UH_C2929505.html
+Passives,1,220uF Capacitor,C1 (Shield),SAMSUNG,C400951,LCSC,https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG-CL32A227MQVNNNE_C400951.html
+Passives,1,100uF Capacitor,C3 (Shield),SAMSUNG,C15008,LCSC,https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG-CL31A107MQHNNNE_C15008.html
+Passives,4,100nF Capacitor,C1-C4 (HMI),WIMA,C19855121,LCSC,https://www.lcsc.com/product-detail/Film-Capacitors_WIMA-SMDTC03100KB00KP00_C19855121.html
+Passives,4,470Ω Resistor,R1,R5,R7,R9,YAGEO,C114949,LCSC,https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0402JR-07470RL_C114949.html
+Passives,7,10kΩ Resistor,R1-R3,R6,R8,R10 (Mixed),EVER OHMS/CCO,C149898/C119202,LCSC,https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_EVER-OHMS-TR0402D10K0Q1025Z_C149898.html
+Passives,1,3.3kΩ Resistor,R4,华星机电,C714109,LCSC,https://www.lcsc.com/product-detail/Through-Hole-Resistors_华星机电-MF1W-3.3K-1-T_C714109.html
