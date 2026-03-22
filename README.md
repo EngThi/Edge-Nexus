@@ -25,22 +25,25 @@ Originally designed for generic ARM SoCs (RK3588), the project **pivoted to the 
 
 ### Mechanical Engineering (OnShape)
 The enclosure features integrated mounting bosses, internal standoffs at Z=35mm, and optimized airflow paths to prevent thermal throttling under high AI workloads.
-- **[OnShape Public Document Link (PENDING - PLEASE UPDATE)]**
+- **[OnShape Public Document Link](https://cad.onshape.com/documents/94f51a65c203ef61216a8e76/w/3996b9a7978ffab042ea39f4/e/1a9b65c9926a8d71aaf1da83?renderMode=0&uiState=69c037fa21771c3657426373)**
 
-## 🛒 Budget & Bill of Materials
-![Shopping Cart](Docs/assets/cartNVIDIA.png)
-*NVIDIA Jetson Orin Nano Super Developer Kit (Arrow.com).*
+## 🛒 Replication Cost & BOM
 
-![PCBs Ordering](Docs/assets/cartPCBs.png)
-*Ordering both PCBs (Shield & HMI) from JLCPCB.*
+This Bill of Materials (BOM) focuses on the **replication cost** for a single unit, excluding shipping, taxes, and import fees.
 
-### Key Components List (BOM)
-| Component | Quantity | Supplier | Link |
-| :--- | :--- | :--- | :--- |
-| **NVIDIA Jetson Orin Nano Super** | 1 | Arrow | [Link](https://www.arrow.com/en/products/945-13766-0000-000/nvidia.html) |
-| **PC817C Optocoupler** | 4 | LCSC | [Link](https://www.lcsc.com/product-detail/Optoisolators-Transistor-Photovoltaic-Output_GOODWORK-PC817C_C3025164.html) |
-| **LM2596S-ADJ Buck Converter** | 1 | LCSC | [Link](https://www.lcsc.com/product-detail/DC-DC-Converters_UMW-友台半导体-LM2596S-ADJ-UMW_C347423.html) |
-| **WS2812B-V5 RGB LED** | 4 | LCSC | [Link](https://www.lcsc.com/product-detail/RGB-LEDs-Built-in-IC_worldsemi-WS2812B-V5_C2846931.html) |
+| Component | Quantity | Supplier | Unit Price (Est.) | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **NVIDIA Jetson Orin Nano Super** | 1 | Arrow | $249.00 | [Link](https://www.arrow.com/en/products/945-13766-0000-000/nvidia.html) |
+| **PC817C Optocoupler** | 4 | LCSC | $0.04 | [Link](https://www.lcsc.com/product-detail/Optoisolators-Transistor-Photovoltaic-Output_GOODWORK-PC817C_C3025164.html) |
+| **LM2596S-ADJ Buck Converter** | 1 | LCSC | $0.57 | [Link](https://www.lcsc.com/product-detail/DC-DC-Converters_UMW-友台半导体-LM2596S-ADJ-UMW_C347423.html) |
+| **WS2812B-V5 RGB LED** | 4 | LCSC | $0.09 | [Link](https://www.lcsc.com/product-detail/RGB-LEDs-Built-in-IC_worldsemi-WS2812B-V5_C2846931.html) |
+| **PCB Manufacturing (Shield + HMI)** | 1 set | JLCPCB | ~$2.00 (split) | [Link](https://jlcpcb.com) |
+| **Other Passives & Connectors** | 1 set | LCSC | ~$5.00 | - |
+| **Total Project Cost** | **-** | **-** | **~$260.00** | **-** |
+
+> **🇧🇷 Note for Brazilian Devs (São Paulo/Hack Clubbers):** Due to local import taxes and shipping, the total cost might be closer to this USD value but paid in BRL with significant overhead. However, most passive components (resistors, caps, headers) can be sourced cheaply at Santa Ifigênia.
+
+For the complete list of parts with Manufacturer Part Numbers (MPN) and MOQ, check the main `BOM.csv` file.
 
 ## 📦 Components Ready for Assembly
 ![Parts 1](Docs/assets/parts1.png)
