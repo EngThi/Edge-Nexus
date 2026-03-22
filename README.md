@@ -1,34 +1,51 @@
-# 🛰️ Edge Nexus
+# 🛰️ Edge Nexus: Industrial Isolation for Jetson AI
 
-**A custom industrial isolation shield for edge AI pipelines**
+**A custom carrier-shield and rugged enclosure for the NVIDIA Jetson Orin Nano Super.**
 
-Edge Nexus is a carrier board/project with SoC designed to bridge the gapbetween high-performance ARM SOCs (like the Orange PI/ systems base on RK3588) and the noisy world of salvaged hardware.
+![Banner](Docs/assets/complete_render_enclousure.png)
 
-The goal is to create a reliable brain for local AI pipelines, like projects, studyies and deployments of automations in general purpose without risking expensive processors when connecting old motors or recycled sensors.
+## 🚀 The Vision
 
-### 🔌 Hardware Features
+Edge Nexus bridges the gap between high-performance AI SoCs and the "dirty" world of salvaged industrial hardware. It provides a reliable brain for local AI pipelines, automation, and computer vision without risking expensive processors when connecting unshielded sensors or recycled motors.
 
-- **Galvanic Isolation:** 4-channel input protection using PC817 optocoupler. This keeps high-voltage spikes from de dirty side away from the sensitive SoC GPIOs.
-- **Power Mangment:**
-Integrated LM2596 buckconverter stage. It steps down 12-19V (from laptop bricks) to a stable 5V rail to power the entire system.
-- **Split-Plane Design:** A dedicated physical gap between `GND_CLEA`and `GND_DIRTY`to prevent EMI/RFI noise couplng.
-- **Universal Header:** Standard 40-pin (2x20) interface, making it compatible with most modern ARM based single-board microcomputers (or others systems ARM, SoCs).
+Originally designed for generic ARM SoCs (RK3588), the project **pivoted to the NVIDIA Jetson Orin Nano Super** to leverage professional-grade CUDA/TensorRT acceleration, while adding a custom industrial safety layer and a rugged, EMI-aware housing.
 
+## 🔌 Core Hardware Features
 
-### Project Structure
+- **Galvanic Isolation:** 4-channel input protection using PC817 optocouplers. This physically decouples high-voltage spikes from "dirty" field sensors from the sensitive Jetson GPIOs.
+- **Power Management:** Integrated LM2596 buck converter stage. It steps down 12-19V (from laptop bricks) to a stable 5V rail to power both the SoC and the HMI layer.
+- **Split-Plane Design:** A dedicated physical "no-man's-land" gap between `GND_CLEAN` and `GND_DIRTY` on the PCB to prevent EMI/RFI noise coupling.
+- **Front HMI Module:** A dedicated 70x20mm PCB with 4x WS2812B LEDs and a Mode/Emergency button for real-time status feedback.
 
-*   `BOM.csv`: Complete project Bill of Materials (Main).
-*   `/Hardware`: Contains all the hardware design files.
-    *   `/Hardware/3D_Models`: Contains the 3D models of the enclosure.
-    *   `/Hardware/Fabrication`: Contains the manufacturing files (Gerber, BOM, Pick and Place).
-    *   `/Hardware/PCB`: Contains the PCB design files.
-    *   `/Hardware/Schematics`: Contains the schematic files.
-*   `/Docs`: Contains the documentation for the project.
-    *   `/Docs/assets`: Contains the images and other assets for the documentation.
+## 🛠️ Design & Fabrication
 
-### 📝 Devlogs
-Check the `JOURNAL.md`for technical updates and engineering decisions.
+### PCB Design (EasyEDA / KiCad)
+![PCB View](Docs/assets/3Dcopper.png)
+*Left: Isolation Shield Layout | Right: Front HMI Routing.*
+
+### Mechanical Engineering (OnShape)
+The enclosure features integrated mounting bosses, internal standoffs at Z=35mm, and optimized airflow paths to prevent thermal throttling under high AI workloads.
+- **[OnShape Public Document Link (PENDING - PLEASE UPDATE)]**
+
+## 📂 Project Structure
+
+*   `BOM.csv`: Complete project Bill of Materials with purchase links.
+*   `/Hardware`:
+    *   `/Hardware/3D_Models`: `.STEP` and `.STL` files for enclosure and PCBs.
+    *   `/Hardware/Fabrication`: Production-ready Gerbers, BOM, and Pick & Place files.
+    *   `/Hardware/PCB`: Original EDA source files (`.epro`).
+    *   `/Hardware/Schematics`: Schematic diagrams and wiring info.
+*   `/Docs`:
+    *   `/Docs/assets`: Documentation images, renders, and screenshots.
+*   `JOURNAL.md`: The complete technical development log.
+
+## 📝 How to Use
+1.  **Fabricate:** Send the Gerber files in `/Hardware/Fabrication` to a PCB house like JLCPCB.
+2.  **Assemble:** Use the `BOM.csv` to source parts. Solder components onto the Isolation Shield and HMI board.
+3.  **3D Print:** Print the enclosure files from `/Hardware/3D_Models`.
+4.  **Connect:** Stack the Edge Nexus Shield onto the NVIDIA Jetson 40-pin header.
 
 ***
 
-_Developed as part of the Hack Club Blueprint 2026_
+_Developed for the Hack Club Blueprint 2026._
+_Designed by @EngThi_
