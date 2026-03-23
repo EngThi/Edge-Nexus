@@ -28,21 +28,19 @@ The enclosure features integrated mounting bosses, internal standoffs at Z=35mm,
 - **[OnShape Public Document Link](https://cad.onshape.com/documents/94f51a65c203ef61216a8e76/w/3996b9a7978ffab042ea39f4/e/1a9b65c9926a8d71aaf1da83?renderMode=0&uiState=69c037fa21771c3657426373)**
 
 ![Full Render](Docs/assets/full_case_render.png)
+
 *Complete Enclosure Render.*
 
 ## 🛒 Replication Cost & BOM
 
 This Bill of Materials (BOM) focuses on the **replication cost** for a single unit, excluding shipping, taxes, and import fees.
 
-| Component | Quantity | Supplier | Unit Price (Est.) | Link |
+| Component | Quantity | Supplier | Unit Price (Real) | Link |
 | :--- | :--- | :--- | :--- | :--- |
 | **NVIDIA Jetson Orin Nano Super** | 1 | Arrow | $249.00 | [Link](https://www.arrow.com/en/products/945-13766-0000-000/nvidia.html) |
-| **PC817C Optocoupler** | 4 | LCSC | $0.04 | [Link](https://www.lcsc.com/product-detail/Optoisolators-Transistor-Photovoltaic-Output_GOODWORK-PC817C_C3025164.html) |
-| **LM2596S-ADJ Buck Converter** | 1 | LCSC | $0.57 | [Link](https://www.lcsc.com/product-detail/DC-DC-Converters_UMW-友台半导体-LM2596S-ADJ-UMW_C347423.html) |
-| **WS2812B-V5 RGB LED** | 4 | LCSC | $0.09 | [Link](https://www.lcsc.com/product-detail/RGB-LEDs-Built-in-IC_worldsemi-WS2812B-V5_C2846931.html) |
-| **PCB Manufacturing (Shield + HMI)** | 1 set | JLCPCB | ~$2.00 (split) | [Link](https://jlcpcb.com) |
-| **Other Passives & Connectors** | 1 set | LCSC | ~$5.00 | - |
-| **Total Project Cost** | **-** | **-** | **~$260.00** | **-** |
+| **PC817, LM2596, WS2812B & Passives** | 1 set | LCSC | $14.92 | [LCSC Cart Total] |
+| **PCB Manufacturing (Shield + HMI)** | 1 set | JLCPCB | $6.10 | [JLCPCB Cart Total] |
+| **Total Project Cost** | **-** | **-** | **$270.02** | **(No tax/shipping)** |
 
 > **🇧🇷 Note for Brazilian Devs (São Paulo/Hack Clubbers):** Due to local import taxes and shipping, the total cost might be closer to this USD value but paid in BRL with significant overhead. However, most passive components (resistors, caps, headers) can be sourced cheaply at Santa Ifigênia.
 
