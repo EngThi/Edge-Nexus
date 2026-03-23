@@ -26,9 +26,9 @@ Chose a 40-pin header footprint compatible with common ARM SoMs (Orange PI/Raspb
 ### The challenge
 I quickly learned that Auto-Routers are completely blind to the concept of **Galvanic Isolation**. When I tried to reach an hybrid routing, the sftware ignored my carefully planned "no-man's-land" and threw traces staight through the optocoupler barrier, defeating the entire purpose of the board... me to cloned the archive of PCB to try working from a point that was advanced, but I ended up getting lost an causing, errors, problems.
 
-![image](/assets/recent_board_schematic.png)
+![image](Docs/assets/recent_board_schematic.png)
 
-![image](/assets/70errors.png)
+![image](Docs/assets/70errors.png)
 
 I had to completely unroute the board and do everything mannualy. This turned into a grueling 3-day process of trial, error, and learning EDA quirks.
 
