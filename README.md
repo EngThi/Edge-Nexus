@@ -42,18 +42,26 @@ This Bill of Materials (BOM) focuses on the **replication cost** for a single un
 
 ![Parts Inventory](Docs/assets/lcsc_parts_v2.png)
 *V2 Components (Relays, ESP32 headers, RS-485 transceiver) from LCSC/Arrow.*
+## 🛒 Replication Cost & BOM
 
-| Component | Quantity | Supplier | Unit Price (Real) | Link |
+This Bill of Materials (BOM) focuses on the **replication cost** for a single unit, strictly considering the merchandise price (excluding shipping, taxes, and import fees).
+
+![Shopping Cart](Docs/assets/jlcpcb_cart_v2.png)
+*Ordering both V2 PCBs (Main Shield & HMI) from JLCPCB.*
+
+![Parts Inventory](Docs/assets/lcsc_parts_v2.png)
+*V2 Components (33 items including Relays, Transceivers, and Sensors) from LCSC.*
+
+| Component | Quantity | Supplier | Unit Price (Merchandise) | Link |
 | :--- | :--- | :--- | :--- | :--- |
 | **ESP32-S3 WeAct Studio** | 1 | AliExpress | $6.66 | [Link](https://pt.aliexpress.com/item/1005005592730189.html) |
-| **SP3485 RS-485 Transceiver** | 1 | LCSC | $0.45 | [Link](https://www.lcsc.com) |
-| **PC817 Optocoupler** | 4 | LCSC | $0.04 | [Link](https://www.lcsc.com) |
-| **LM2596S-ADJ Buck Converter** | 1 | LCSC | $0.57 | [Link](https://www.lcsc.com) |
-| **DS3231 RTC Module** | 1 | LCSC | $1.20 | [Link](https://www.lcsc.com) |
-| **INA219 Current Sensor** | 1 | LCSC | $0.85 | [Link](https://www.lcsc.com) |
+| **LCSC Components Batch** | 1 set | LCSC | $43.43 | [Cart Total] |
 | **PCB Manufacturing** | 1 set | JLCPCB | $6.10 | [Link](https://jlcpcb.com) |
+| **Total Project Cost** | **-** | **-** | **$56.19** | **(No tax/shipping)** |
 
-> **Total Estimated Project Cost: ~$23.00** (Excluding shipping/tax) - A massive reduction from the original $300 Jetson-based design, focused on pure hardware engineering.
+> **🇧🇷 Note for Brazilian Devs (São Paulo/Hack Clubbers):** For builders in São Paulo, the final cost to have all these parts in hand should stay very close to this total. Many passives and standard connectors can be found at Santa Ifigênia for similar prices, and the ESP32/LCSC imports (when below the tax threshold) maintain this competitive cost.
+
+For the complete list of all 33+ parts with MPN and MOQ, check the main `BOM.csv` file.
 
 ## 📂 Project Structure
 
