@@ -35,6 +35,14 @@ The enclosure features integrated mounting bosses and optimized internal clearan
 
 ## 🛒 Replication Cost & BOM
 
+This Bill of Materials (BOM) focuses on the **replication cost** for a single unit, excluding shipping, taxes, and import fees.
+
+![Shopping Cart](Docs/assets/jlcpcb_cart_v2.png)
+*Ordering both V2 PCBs (Main Shield & HMI) from JLCPCB.*
+
+![Parts Inventory](Docs/assets/lcsc_parts_v2.png)
+*V2 Components (Relays, ESP32 headers, RS-485 transceiver) from LCSC/Arrow.*
+
 | Component | Quantity | Supplier | Unit Price (Real) | Link |
 | :--- | :--- | :--- | :--- | :--- |
 | **ESP32-S3 WeAct Studio** | 1 | AliExpress | $6.66 | [Link](https://pt.aliexpress.com/item/1005005592730189.html) |
