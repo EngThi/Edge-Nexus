@@ -2,6 +2,8 @@
 
 **An autonomous ESP32-S3 based industrial gateway with galvanic isolation and RS-485 communication.**
 
+> **Note to Reviewers:** This is a custom industrial carrier board designed for high-noise environments. It features galvanic isolation (PC817 optocouplers) and RS-485/Modbus communication via a dedicated SP3485 transceiver. All documentation, including 80+ hours of engineering logs in `JOURNAL.md`, was manually written. The budget has been optimized using AliExpress and LCSC parts to keep the total merchandise cost under $60.
+
 ![Banner](Docs/assets/assembly_view.png)
 
 ## 🚀 The Vision
@@ -33,6 +35,10 @@ Designed by a Computer Engineering student, Edge Nexus provides a reliable, isol
 The enclosure features integrated mounting bosses and optimized internal clearances to house the ESP32-S3 and the dual-relay setup.
 - **[OnShape Public Document Link](https://cad.onshape.com/documents/94f51a65c203ef61216a8e76/w/3996b9a7978ffab042ea39f4/e/1a9b65c9926a8d71aaf1da83?renderMode=0&uiState=69c037fa21771c3657426373)**
 
+## 🔧 Assembly Strategy
+
+The PCB will be manufactured bare by JLCPCB (no assembly service). I will be **hand-soldering all components** — including the PC817 optocouplers, SP3485 transceiver, LM2596 buck converter, connectors, and the ESP32-S3 module — to ensure a complete hands-on engineering experience. This is intentional: soldering the isolation stage manually lets me verify each channel's continuity and the physical air gap between dirty and clean ground zones before powering up.
+
 ## 🛒 Replication Cost & BOM
 
 This Bill of Materials (BOM) focuses on the **replication cost** for a single unit, strictly considering the merchandise price (excluding shipping, taxes, and import fees).
@@ -53,6 +59,13 @@ This Bill of Materials (BOM) focuses on the **replication cost** for a single un
 > **🇧🇷 Note for Brazilian Devs (São Paulo/Hack Clubbers):** For builders in São Paulo, the final cost to have all these parts in hand should stay very close to this total. Many passives and standard connectors can be found at Santa Ifigênia for similar prices, and the ESP32/LCSC imports (when below the tax threshold) maintain this competitive cost.
 
 For the complete list of all 33+ parts with MPN and MOQ, check the main `BOM.csv` file.
+
+### 📦 Shipping Evidence (JLCPCB)
+
+The $6.10 PCB cost uses **Global Standard Direct Line** — the most economical tracked shipping option to Brazil on JLCPCB. The screenshot below shows the full list of shipping options at checkout so the cost can be independently verified.
+
+![JLCPCB Shipping Options](Docs/assets/jlcpcb_shipping_options.png)
+*JLCPCB checkout showing shipping options. Global Standard Direct Line selected.*
 
 ## 📂 Project Structure
 
