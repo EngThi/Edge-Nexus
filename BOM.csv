@@ -1,12 +1,30 @@
 Category,Quantity,Component,Designator,Manufacturer,Part Number,Supplier,Unit Price (USD),MOQ,Link
 Computing,1,ESP32-S3 WeAct Studio,U1,WeAct Studio,ESP32-S3-N16R8,AliExpress,6.66,1,https://pt.aliexpress.com/item/1005005592730189.html
-Comms,1,SP3485 RS-485 Transceiver,U2,Sipex,SP3485EN-L/TR,LCSC,0.45,1,https://www.lcsc.com/product-detail/RS-485-RS-422-Receivers-Transceivers_MaxLinear-Exar-SP3485EN-L-TR_C6767.html
-Power,1,LM2596S-ADJ Buck Converter,U3,UMW,C347423,LCSC,0.57,1,https://www.lcsc.com/product-detail/DC-DC-Converters_UMW-友台半导体-LM2596S-ADJ-UMW_C347423.html
-Isolation,4,PC817C Optocoupler,U4-U7,GOODWORK,C3025164,LCSC,0.04,20,https://www.lcsc.com/product-detail/Optoisolators-Transistor-Photovoltaic-Output_GOODWORK-PC817C_C3025164.html
-Actuation,2,5V Relay (SRD-05VDC-SL-C),RL1-RL2,Songle,C491,LCSC,0.42,1,https://www.lcsc.com/product-detail/Relays_Songle-Relay-SRD-05VDC-SL-C_C491.html
-Sensors,1,INA219 Power Monitor,U8,TI,INA219AIDCNR,LCSC,0.85,1,https://www.lcsc.com/product-detail/Current-Sensors_Texas-Instruments-INA219AIDCNR_C38545.html
-Sensors,1,AHT20 Temp/Hum Sensor,U9,ASAIR,AHT20,LCSC,0.65,1,https://www.lcsc.com/product-detail/Temperature-Humidity-Sensors_ASAIR-AHT20_C2683133.html
-Clock,1,DS3231 RTC,U10,Maxim,DS3231MZ+,LCSC,1.20,1,https://www.lcsc.com/product-detail/Real-Time-Clocks-RTC_Maxim-Integrated-DS3231MZ_C49163.html
-Storage,1,MicroSD Slot (SPI),J1,G-Switch,C96532,LCSC,0.15,1,https://www.lcsc.com/product-detail/SD-Card-Connectors_G-Switch-ST-TF-003A_C96532.html
+Comms,1,SP3485 RS-485 Transceiver,U18,MaxLinear,C8963,LCSC,0.45,1,https://www.lcsc.com/product-detail/RS-485-RS-422-Receivers-Transceivers_MaxLinear-Exar-SP3485EN-L-TR_C6767.html
+Power,1,LM2596S-ADJ Buck Converter,U1,UMW,C347423,LCSC,0.57,1,https://www.lcsc.com/product-detail/DC-DC-Converters_UMW-友台半导体-LM2596S-ADJ-UMW_C347423.html
+Isolation,4,PC817C Optocoupler,U3-U6,GOODWORK,C3025164,LCSC,0.04,20,https://www.lcsc.com/product-detail/Optoisolators-Transistor-Photovoltaic-Output_GOODWORK-PC817C_C3025164.html
+Actuation,2,5V Relay (SRD-05VDC-SL-C),RLY1-RLY2,Songle,C35449,LCSC,0.42,1,https://www.lcsc.com/product-detail/Relays_Songle-Relay-SRD-05VDC-SL-C_C35449.html
+Sensors,2,INA219 Current Sensor,U21,TI,C138706,LCSC,0.85,1,https://www.lcsc.com/product-detail/Current-Sensors_Texas-Instruments-INA219AIDR_C138706.html
+Sensors,1,SHT41A Temp/Hum Sensor,U16,Sensirion,C7461859,LCSC,1.50,1,https://www.lcsc.com/product-detail/Temperature-Humidity-Sensors_Sensirion-AG-SHT41A-BD1B-R2_C7461859.html
+Clock,1,DS3231 RTC,U17,Maxim,C722469,LCSC,1.20,1,https://www.lcsc.com/product-detail/Real-Time-Clocks-RTC_Maxim-Integrated-DS3231SN_C722469.html
+Storage,1,MicroSD Slot (SPI),U20,MUP,C20624804,LCSC,0.15,1,https://www.lcsc.com/product-detail/SD-Card-Connectors_MUP-M6027-01_C20624804.html
+Discrete,2,S8050 NPN Transistor,Q1-Q2,CJ,C2146,LCSC,0.01,50,https://www.lcsc.com/product-detail/Bipolar-Transistors-BJT_CJ-S8050_C2146.html
+Discrete,1,1N5822 Schottky Diode,D1,LRC,C82806,LCSC,0.15,5,https://www.lcsc.com/product-detail/Schottky-Diodes_LRC-1N5822_C82806.html
+Discrete,2,1N4007 Diode,D2-D3,Generic,C727081,LCSC,0.02,100,https://www.lcsc.com/product-detail/Diodes-General-Purpose_YONGYUTAI-1N4007_C727081.html
+Passives,1,100uH Inductor,U2,SHOU HAN,C2929505,LCSC,0.38,5,https://www.lcsc.com/product-detail/Inductors-SMD_SHOU-HAN-CYH127-100UH_C2929505.html
+Passives,1,220uF Capacitor,C1,SAMSUNG,C400951,LCSC,0.91,1,https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG-CL32A227MQVNNNE_C400951.html
+Passives,1,100uF Capacitor (35V),C2,Econd,C49304899,LCSC,0.10,10,https://www.lcsc.com/product-detail/Electrolytic-Capacitors-Leaded_Econd-100uF35V8x11GF_C49304899.html
+Passives,1,10uF Capacitor,C3,CEC,C2976905,LCSC,0.05,10,https://www.lcsc.com/product-detail/Tantalum-Capacitors_CEC-CA45A-P-6-3V-10UF-K_C2976905.html
+Passives,1,100nF Capacitor,C4,HUAWEI,C271438,LCSC,0.02,100,https://www.lcsc.com/product-detail/Aluminum-Electrolytic-Capacitors-SMD_HUAWEI-VT1H0R1MB054000CE0_C271438.html
+Passives,4,470Ω Resistor 0402,R1,R5,R7,R9,YAGEO,C114949,LCSC,0.001,100,https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0402JR-07470RL_C114949.html
+Passives,5,10kΩ Resistor 0402,R2,R3,R6,R8,R10,EVER OHMS,C149898,LCSC,0.02,50,https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_EVER-OHMS-TR0402D10K0Q1025Z_C149898.html
+Passives,2,4.7kΩ Resistor 0603,R14-R15,UNI-ROYAL,C23162,LCSC,0.01,100,https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-0603WAF4701T5E_C23162.html
+Passives,2,1kΩ Resistor 1206,R12-R13,UNI-ROYAL,C4410,LCSC,0.01,100,https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-1206W4F1001T5E_C4410.html
+Passives,1,120Ω Resistor 0805,R11,Generic,C384167,LCSC,0.01,100,https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-WR08X121JTL_C384167.html
+Passives,1,3.3kΩ Resistor TH,R4,Huaxing,C714109,LCSC,0.03,20,https://www.lcsc.com/product-detail/Through-Hole-Resistors_华星机电-MF1W-3.3K-1-T_C714109.html
+Connectors,1,40-pin Female Header (PC104),H1,BOOMELE,C35165,LCSC,1.03,1,https://www.lcsc.com/product-detail/Female-Headers_BOOMELE-C35165_C35165.html
+Connectors,1,CR2032 Battery Holder,BAT1,Generic,C9900018737,LCSC,0.25,1,https://www.lcsc.com/product-detail/Battery-Holders_CR2032-2-1_C9900018737.html
 Connectors,4,KF128-5.0-2P Screw Terminal,J2-J5,KEFA,C474950,LCSC,0.18,5,https://www.lcsc.com/product-detail/Screw-Terminal-Blocks_KEFA-KF128-5.0-2P_C474950.html
+Connectors,3,4-pin Screw Terminal (3.5mm),U19,MAX,C5349545,LCSC,0.30,1,https://www.lcsc.com/product-detail/Screw-Terminal-Blocks_MAX-MX127S-3-5-04P-GN01-CU-Y-A_C5349545.html
+Connectors,1,2x5 pin Header,U22,ZHOURI,C2977587,LCSC,0.15,1,https://www.lcsc.com/product-detail/Female-Headers_ZHOURI-2-54-2-5_C2977587.html
 PCB,1,Edge Nexus V2 PCB,Main,JLCPCB,Custom,JLCPCB,6.10,5,https://jlcpcb.com

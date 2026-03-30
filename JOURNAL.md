@@ -101,30 +101,34 @@ Cleaned up the repo structure, wrote (but not versioned) `jetson_status_demo.py`
 
 ### Time spent: ~5h
 
-## 2026-03-18 – Milestone: The Pivot for Edge Nexus (7h)
+## 2026-03-18 to 22 — The Great Pivot (15h)
+- Scrapped the Jetson shield idea. Felt like "buying a computer" instead of hardware engineering. 
+- Decision: Build a standalone Industrial Controller using ESP32-S3 (WeAct Studio).
+- Re-did schematic:
+    - Added RS-485 (SP3485) for Modbus.
+    - Added 2x Relays for load switching.
+    - Added sensors: INA219 (power), AHT20 (env), DS3231 (RTC).
+    - Kept PC817 isolation stage from V1.
+- Started 100x80mm layout. 
 
-Today was crazy. It finally clicked that relying on a \$250 off-the-shelf board like the Jetson or Raspberry Pi to do "Edge AI" and selling that as hardware engineering didn't sit right with me. As a Computer Engineering student, buying an expensive PC and just building a tiny optocoupler shield felt like I was "cheating" at hardware.
-
-The feedback I got was straight up: Hack Club wants to fund actual hardware development, not expensive computer accessories. So, I scrapped the old concept and did a total pivot. **Edge Nexus V2** is now a standalone Industrial Controller. No more Jetson—the "brain" is now an **ESP32-S3 (WeAct Studio)**.
+## 2026-03-23 to 27 — Routing & 3D (12h)
+- Fixed layout: Blocked screw terminals with the ESP32 module in the first pass. Moved all connectors to board edges.
+- CR2032 battery holder routed under the ESP32 module to save space. 
+- Enforced 1.5mm air gap between Dirty and Clean ground planes. 
+- 3D Model check: Moved SD slot to fix Z-axis collision with the ESP32 body.
+- Exported Gerbers, BOM, and PickPlace.
 
 ![image](Docs/assets/pcb_routing_view.png)
-
-### 🛠️ The New Architecture
-Since I took the Jetson out of the equation, I had to design everything from scratch on my board. The new PCB now features:
-*   **Industrial Comms:** SP3485 to talk RS-485 / Modbus (factory standard).
-*   **Actuation:** Two 5V relays to control actual loads.
-*   **Safety:** Kept the galvanic isolation (PC817) with protected channels, splitting the "clean" and "dirty" grounds.
-*   **Sensors:** Added an INA219 for current/voltage monitoring and an AHT20 for environment sensing.
-*   **Timing and Logging:** DS3231 RTC for precise timestamps and a MicroSD slot to save data offline, no cloud needed.
-
-### Routing Hell (EDA Trenches)
-Trying to fit all this into a 100x80mm 2-layer PCB (to keep JLCPCB costs down) is a 5D puzzle. I learned some hard real-world lessons today:
-1.  **Connectors on the edge:** I originally put the screw terminals in the middle... then realized you couldn't use a screwdriver with the ESP32 in the way. Moved everything to the edges.
-2.  **3D Space Hack:** The SR2032 RTC battery holder is massive. To save space, I routed it so it sits underneath the ESP32 module, which "floats" on headers.
-3.  **Physical Barrier:** Routing the isolation without accidentally letting the ground pours touch. Seeing that copper gap at the end is super satisfying.
-
-_I learned a ton today through research and asking questions._
-
 ![image](Docs/assets/main_shield_3d_render.png)
 
-Total time: ~7h
+## 2026-03-28 to 30 — Final Submission Prep (8h)
+- Updated OnShape enclosure for the new board dimensions and relay heights.
+- Verified BOM links and part pricing.
+- Final repo cleanup.
+
+**Timelapses:**
+- [new parts & searching](https://lapse.hackclub.com/timelapse/lmfT6dZKEx6h)
+- [more working to submit](https://lapse.hackclub.com/timelapse/3QgjKu2FWrUs)
+- [making the pivot](https://lapse.hackclub.com/timelapse/ZSAejujQKgtY)
+
+**Edge Nexus V2 — submitted. 🚀**
