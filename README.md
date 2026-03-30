@@ -1,4 +1,4 @@
-# 🛰️ Edge Nexus: Standalone Industrial Edge Controller
+# Edge Nexus: Standalone Industrial Edge Controller
 
 **An autonomous ESP32-S3 based industrial gateway with galvanic isolation and RS-485 communication.**
 
@@ -6,7 +6,7 @@
 
 ![Banner](Docs/assets/assembly_view.png)
 
-## 🚀 The Vision
+## The Vision
 
 Edge Nexus is a custom-built industrial controller designed to bridge the gap between IoT microcontrollers and high-noise environments. Originally a shield for AI SoCs, the project **pivoted to a standalone architecture** to focus on true hardware engineering and deterministic industrial automation.
 
@@ -25,7 +25,7 @@ Designed by a Computer Engineering student, Edge Nexus provides a reliable, isol
     - **SHT41** sensor for environmental (temperature/humidity) monitoring.
 - **Storage:** Onboard **MicroSD slot** for long-term offline data logging.
 
-## 🛠️ Design & Fabrication
+## Design & Fabrication
 
 ### PCB Design (EasyEDA)
 ![PCB View](Docs/assets/main_shield_3d_render.png)
@@ -35,7 +35,7 @@ Designed by a Computer Engineering student, Edge Nexus provides a reliable, isol
 The enclosure features integrated mounting bosses and optimized internal clearances to house the ESP32-S3 and the dual-relay setup.
 - **[OnShape Public Document Link](https://cad.onshape.com/documents/94f51a65c203ef61216a8e76/w/3996b9a7978ffab042ea39f4/e/1a9b65c9926a8d71aaf1da83?renderMode=0&uiState=69c037fa21771c3657426373)**
 
-## 🔧 Assembly Strategy
+## Assembly Strategy
 
 The PCB will be manufactured bare by JLCPCB (no assembly service). I will be **hand-soldering all components** — including the PC817 optocouplers, SP3485 transceiver, LM2596 buck converter, connectors, and the ESP32-S3 module — to ensure a complete hands-on engineering experience. This is intentional: soldering the isolation stage manually lets me verify each channel's continuity and the physical air gap between dirty and clean ground zones before powering up.
 
