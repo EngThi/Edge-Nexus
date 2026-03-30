@@ -64,12 +64,12 @@ _I also had to fiz the Mounting Holes in the PCB in EasyEDA. Later when I export
 
 # 2026-03-07 - Design polish & NVIDIA pivot
 
-Today I didn’t touch any traces, but focused on polishing the product around the PCB.
+Today I didn't touch any traces, but focused on polishing the product around the PCB.
 I finalized the first pass of the industrial enclosure and realized that my Edge Nexus shield and case can be reused with the **`NVIDIA Jetson Orin Nano Super Developer Kit`**, not just RK3588/Orange Pi. The official dev kit already includes a professional carrier board, so my role is to provide an industrial isolation layer and a rugged, EMI‑aware housing around it.
 
 ![image](Docs/assets/NVIDIA_JETSON_NANO.png)
 
-I still need to refine mounting points, clearances and I/O cutouts to match the real Jetson dimensions, but the overall architecture (split data/power sides, standoffs at Z=35 mm, and fan tunnel) is compatible. Next step is to stylize the PCB silkscreen and enclosure and then add one more small, fully custom hardware module to increase the amount of hands‑on soldering and assembly in the project.
+I still need to refine mounting points, clearances and I/O cutouts to match the real Jetson dimensions, but the overall architecture (split data/power sides, standoffs at Z=35 mm, and fan tunnel) is compatible. Next step is to stylize the PCB silkscreen and enclosure and then add one more small, fully custom hardware module to increase the amount of hands‑on soldering and assembly in the project.
 
 # 2026-03-08 to 09 - Front HMI Board: Routing & Design
 
@@ -101,13 +101,15 @@ Cleaned up the repo structure, wrote (but not versioned) `jetson_status_demo.py`
 
 ### Time spent: ~5h
 
+---
+
 ## 2026-03-18 to 22 — The Great Pivot (15h)
 - Scrapped the Jetson shield idea. Felt like "buying a computer" instead of hardware engineering. 
 - Decision: Build a standalone Industrial Controller using ESP32-S3 (WeAct Studio).
 - Re-did schematic:
     - Added RS-485 (SP3485) for Modbus.
     - Added 2x Relays for load switching.
-    - Added sensors: INA219 (power), AHT20 (env), DS3231 (RTC).
+    - Added sensors: INA219 (power), SHT41 (env), DS3231 (RTC).
     - Kept PC817 isolation stage from V1.
 - Started 100x80mm layout. 
 
