@@ -16,11 +16,11 @@ Designed by a Computer Engineering student, Edge Nexus provides a reliable, isol
 - **Galvanic Isolation:** 4-channel input protection using PC817 optocouplers. This physically decouples high-voltage spikes from "dirty" industrial sensors from the sensitive MCU logic.
 - **Industrial Comms:** Integrated **SP3485 transceiver** for RS-485 / Modbus communication, standard for industrial PLC and sensor networks.
 - **Power Management:** Integrated LM2596 buck converter stage. It steps down 12-19V (from laptop bricks) to a stable 5V rail to power the entire system.
-- **Actuation & Telemetry:** 
+- **Actuation & Telemetry:**
     - Dual **5V Relays** for physical load control.
     - **INA219** for real-time voltage and current monitoring.
     - **DS3231 RTC** with backup battery for precise offline timestamps.
-    - **AHT20** sensor for environmental (temperature/humidity) monitoring.
+    - **SHT41** sensor for environmental (temperature/humidity) monitoring.
 - **Storage:** Onboard **MicroSD slot** for long-term offline data logging.
 
 ## 🛠️ Design & Fabrication
@@ -35,19 +35,10 @@ The enclosure features integrated mounting bosses and optimized internal clearan
 
 ## 🛒 Replication Cost & BOM
 
-This Bill of Materials (BOM) focuses on the **replication cost** for a single unit, excluding shipping, taxes, and import fees.
-
-![Shopping Cart](Docs/assets/jlcpcb_cart_v2.png)
-*Ordering both V2 PCBs (Main Shield & HMI) from JLCPCB.*
-
-![Parts Inventory](Docs/assets/lcsc_parts_v2.png)
-*V2 Components (Relays, ESP32 headers, RS-485 transceiver) from LCSC/Arrow.*
-## 🛒 Replication Cost & BOM
-
 This Bill of Materials (BOM) focuses on the **replication cost** for a single unit, strictly considering the merchandise price (excluding shipping, taxes, and import fees).
 
 ![Shopping Cart](Docs/assets/jlcpcb_cart_v2.png)
-*Ordering both V2 PCBs (Main Shield & HMI) from JLCPCB.*
+*Ordering the V2 PCB (Main Shield) from JLCPCB.*
 
 ![Parts Inventory](Docs/assets/lcsc_parts_v2.png)
 *V2 Components (33 items including Relays, Transceivers, and Sensors) from LCSC.*
@@ -65,15 +56,22 @@ For the complete list of all 33+ parts with MPN and MOQ, check the main `BOM.csv
 
 ## 📂 Project Structure
 
-*   `BOM.csv`: Complete project Bill of Materials (Main).
-*   `/Hardware`:
-    *   `/Hardware/3D_Models`: Enclosure and board `.STEP` files.
-    *   `/Hardware/Main_Shield`: Fabrication files for the standalone controller.
-    *   `/Hardware/PCB`: Original EDA source files (`.epro`).
-*   `/Docs`: Assets and documentation images.
-*   `JOURNAL.md`: The complete technical development log.
+```
+├── BOM.csv                         # Complete Bill of Materials
+├── JOURNAL.md                      # Full technical development log
+├── Hardware/
+│   ├── Main_Shield/
+│   │   ├── Fabrication/            # Gerber.zip, BOM, PickAndPlace
+│   │   ├── PCB/                    # EDA source files (.epro)
+│   │   └── Schematics/             # Schematic PDF
+│   ├── Front_HMI/                  # V1 HMI board files
+│   └── 3D_Models/                  # Enclosure & board STEP files
+├── Docs/                           # Assets and documentation images
+└── software/
+    └── main.py                     # ESP32-S3 MicroPython firmware
+```
 
-***
+---
 
-_Developed for the Hack Club Blueprint 2026._
+_Developed for the Hack Club Blueprint 2026._  
 _Designed by @EngThi_
