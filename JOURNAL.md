@@ -104,7 +104,7 @@ For the front panel I dropped the rectangular window idea and went with individu
 
 Cleaned up the repo structure. Wrote `jetson_status_demo.py` using `Jetson.GPIO` — reads the MODE button and cycles LED states: blue (idle), green (processing), red blinking (emergency). Hardware stub, but the state machine and electrical interface are fully documented.
 
-**Edge Nexus V1 ready for initial submission.** 🚀
+**Edge Nexus V1 ready for initial submission.** 
 
 ### Time spent — **~5h**
 
@@ -112,7 +112,7 @@ Cleaned up the repo structure. Wrote `jetson_status_demo.py` using `Jetson.GPIO`
 
 ## 2026-03-18 to 22 — The Great Pivot
 
-Scrapped the Jetson shield architecture. Using a $500 NVIDIA board as a dependency felt like "buying a computer" rather than doing hardware engineering. The point of Blueprint is to build something, not to wrap something expensive.
+Scrapped the Jetson shield architecture. Using a $249 NVIDIA board as a dependency felt like "buying a computer" rather than doing hardware engineering. The point of Blueprint is to build something, not to wrap something expensive.
 
 **Decision: standalone Industrial Controller using ESP32-S3 (WeAct Studio).**
 
