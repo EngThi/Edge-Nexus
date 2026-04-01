@@ -1,92 +1,84 @@
-# 🚀 SHIP HARDWARE, NOT BUDGETS: Industrial Control for <$60.
+# SHIP HARDWARE, NOT BUDGETS: Industrial Control for under $60
 
-# 🛰️ Edge Nexus: Standalone Industrial Edge Controller
+# Edge Nexus: Standalone Industrial Edge Controller
 
-
-**An autonomous ESP32-S3 based industrial gateway with galvanic isolation and RS-485 communication.**
-
-> **Note to Reviewers:** This is a custom industrial carrier board designed for high-noise environments. It features galvanic isolation (PC817 optocouplers) and RS-485/Modbus communication via a dedicated SP3485 transceiver. All documentation, including 80+ hours of engineering logs in `JOURNAL.md`, was manually written. The budget has been optimized using AliExpress and LCSC parts to keep the total merchandise cost under $60.
+This is a custom industrial carrier board I built for high-noise environments. It uses PC817 optocouplers for isolation and has RS-485/Modbus comms through an SP3485 chip. I wrote all the docs myself, including the 80+ hours of logs in JOURNAL.md. I optimized the budget using AliExpress and LCSC parts to keep the hardware cost under $60.
 
 ![Banner](Docs/assets/assembly_view.png)
 
-## The Vision
+## Why I built this
 
-Edge Nexus is a custom-built industrial controller designed to bridge the gap between IoT microcontrollers and high-noise environments. Originally a shield for AI SoCs, the project **pivoted to a standalone architecture** to focus on true hardware engineering and deterministic industrial automation.
+Edge Nexus is an industrial controller meant to bridge the gap between standard IoT boards and noisy factory floors. It started as a shield for bigger SBCs, but I decided to make it standalone. It focuses on actual hardware engineering rather than just plugging things into a Linux computer.
 
-Designed by a Computer Engineering student, Edge Nexus provides a reliable, isolated brain for edge automation, telemetry, and local data logging without the need for expensive, off-the-shelf single-board computers.
+I'm a Computer Engineering student and I wanted a reliable, isolated brain for automation and logging that doesn't cost hundreds of dollars for off-the-shelf parts.
 
-## Core Hardware Features
+## What is on the board
 
-- **Brain:** Powered by the **ESP32-S3 (WeAct Studio)**, providing high-performance dual-core processing, WiFi, and Bluetooth.
-- **Galvanic Isolation:** 4-channel input protection using PC817 optocouplers. This physically decouples high-voltage spikes from "dirty" industrial sensors from the sensitive MCU logic.
-- **Industrial Comms:** Integrated **SP3485 transceiver** for RS-485 / Modbus communication, standard for industrial PLC and sensor networks.
-- **Power Management:** Integrated LM2596 buck converter stage. It steps down 12-19V (from laptop bricks) to a stable 5V rail to power the entire system.
-- **Actuation & Telemetry:**
-    - Dual **5V Relays** for physical load control.
-    - **INA219** for real-time voltage and current monitoring.
-    - **DS3231 RTC** with backup battery for precise offline timestamps.
-    - **SHT41** sensor for environmental (temperature/humidity) monitoring.
-- **Storage:** Onboard **MicroSD slot** for long-term offline data logging.
+- Brain: ESP32-S3 (WeAct Studio module). It handles the logic, WiFi, and Bluetooth.
+- Isolation: 4-channel input protection using PC817 optocouplers. This stops high-voltage spikes from killing the ESP32.
+- Comms: SP3485 transceiver for RS-485 / Modbus. This is the standard for industrial PLCs.
+- Power: Built-in LM2596 buck converter. You can power the whole thing from a 12-19V laptop brick.
+- Relays: Two 5V relays to switch actual loads.
+- Sensors: INA219 for power monitoring, SHT41 for temp/humidity, and a DS3231 RTC for keeping time offline.
+- Storage: MicroSD slot to save logs without needing a cloud connection.
 
-## Design & Fabrication
+## Design and Making it
 
-### PCB Design (EasyEDA)
+### PCB Layout
 ![PCB View](Docs/assets/main_shield_3d_v2.png)
-*Left: Edge Nexus V2 Standalone Controller | Right: Isolation Gap and Routing.*
+*V2 Standalone Controller and the routing details.*
 
-### Mechanical Engineering (OnShape)
-The enclosure features integrated mounting bosses and optimized internal clearances to house the ESP32-S3 and the dual-relay setup.
-- **[OnShape Public Document Link](https://cad.onshape.com/documents/94f51a65c203ef61216a8e76/w/3996b9a7978ffab042ea39f4/e/1a9b65c9926a8d71aaf1da83?renderMode=0&uiState=69c037fa21771c3657426373)**
+### Mechanicals
+I designed the enclosure in OnShape with mounting bosses and enough space for the relays and the ESP32.
+- [OnShape Public Link](https://cad.onshape.com/documents/94f51a65c203ef61216a8e76/w/3996b9a7978ffab042ea39f4/e/1a9b65c9926a8d71aaf1da83?renderMode=0&uiState=69c037fa21771c3657426373)
 
-## Assembly Strategy
+## How I'm assembling it
 
-The PCB will be manufactured bare by JLCPCB (no assembly service). I will be **hand-soldering all components** — including the PC817 optocouplers, SP3485 transceiver, LM2596 buck converter, connectors, and the ESP32-S3 module — to ensure a complete hands-on engineering experience. This is intentional: soldering the isolation stage manually lets me verify each channel's continuity and the physical air gap between dirty and clean ground zones before powering up.
+The PCB is coming bare from JLCPCB. I'm hand-soldering everything myself—optoacopladores, the transceiver, buck converter, and all the headers. I want to verify the isolation gap and continuity manually before I ever turn it on.
 
-## 🛒 Replication Cost & BOM
+## Cost to replicate
 
-This Bill of Materials (BOM) focuses on the **replication cost** for a single unit, strictly considering the merchandise price (excluding shipping, taxes, and import fees).
+This is the price for the parts, not including shipping or taxes.
 
 ![Shopping Cart](Docs/assets/jlcpcb_cart_v2.png)
-*Ordering the V2 PCB (Main Shield) from JLCPCB.*
+*PCBs from JLCPCB.*
 
 ![Parts Inventory](Docs/assets/lcsc_parts_v2.png)
-*V2 Components (33 items including Relays, Transceivers, and Sensors) from LCSC.*
+*Parts from LCSC.*
 
-| Component | Quantity | Supplier | Unit Price (Merchandise) | Link |
-| :--- | :--- | :--- | :--- | :--- |
-| **ESP32-S3 WeAct Studio** | 1 | AliExpress | $6.66 | [Link](https://pt.aliexpress.com/item/1005005592730189.html) |
-| **LCSC Components Batch** | 1 set | LCSC | $43.43 | [Cart Total] |
-| **PCB Manufacturing** | 1 set | JLCPCB | $6.10 | [Link](https://jlcpcb.com) |
-| **Total Project Cost** | **-** | **-** | **$56.19** | **(No tax/shipping)** |
+| Item | Qty | From | Price |
+| :--- | :--- | :--- | :--- |
+| ESP32-S3 WeAct Studio | 1 | AliExpress | $6.66 |
+| LCSC Components Batch | 1 set | LCSC | $43.43 |
+| PCB Manufacturing | 1 set | JLCPCB | $6.10 |
+| **Total** | | | **$56.19** |
 
-> **🇧🇷 Note for Brazilian Devs (São Paulo/Hack Clubbers):** For builders in São Paulo, the final cost to have all these parts in hand should stay very close to this total. Many passives and standard connectors can be found at Santa Ifigênia for similar prices, and the ESP32/LCSC imports (when below the tax threshold) maintain this competitive cost.
+Note for people in Brazil (São Paulo): If you are around Santa Ifigênia, you can get most of the passives and connectors there for cheap. The ESP32 and LCSC orders usually stay under the tax limit if you're careful.
 
-For the complete list of all 33+ parts with MPN and MOQ, check the main `BOM.csv` file.
+Check BOM.csv for the full list of all 33+ parts.
 
-### 📦 Shipping Evidence (JLCPCB)
-
-The $6.10 PCB cost uses **Global Standard Direct Line** — the most economical tracked shipping option to Brazil on JLCPCB. The screenshot below shows the full list of shipping options at checkout so the cost can be independently verified.
+### Shipping info
+I used Global Standard Direct Line for the PCBs, which is the cheapest tracked option to Brazil.
 
 ![JLCPCB Shipping Options](Docs/assets/jlcpcb_shipping_options.png)
-*JLCPCB checkout showing shipping options. Global Standard Direct Line selected.*
 
-## 📂 Project Structure
+## Folder Structure
 
 ```
-├── BOM.csv                         # Complete Bill of Materials
-├── JOURNAL.md                      # Full technical development log
+├── BOM.csv                         # Full parts list
+├── JOURNAL.md                      # Engineering logs
 ├── Hardware/
 │   ├── Main_Shield/
-│   │   ├── Fabrication/            # Gerber.zip, BOM, PickAndPlace
-│   │   ├── PCB/                    # EDA source files (.epro)
-│   │   └── Schematics/             # Schematic PDF
-│   ├── Front_HMI/                  # V1 HMI board files
-│   └── 3D_Models/                  # Enclosure & board STEP files
-├── Docs/                           # Assets and documentation images
+│   │   ├── Fabrication/            # Gerbers and BOM
+│   │   ├── PCB/                    # EasyEDA files
+│   │   └── Schematics/             # PDF Schematic
+│   ├── Front_HMI/                  # HMI board files
+│   └── 3D_Models/                  # STEP files
+├── Docs/                           # Images and renders
 └── software/
-    └── main.py                     # ESP32-S3 MicroPython firmware
+    └── main.py                     # Firmware
 ```
 
 ---
 
-_Developed for the Hack Club Blueprint 2026._Designed by @EngThi_
+Developed for Hack Club Blueprint 2026. Designed by @EngThi
