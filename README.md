@@ -1,4 +1,7 @@
-# Edge Nexus: Standalone Industrial Edge Controller
+# 🚀 SHIP HARDWARE, NOT BUDGETS: Industrial Control for <$60.
+
+# 🛰️ Edge Nexus: Standalone Industrial Edge Controller
+
 
 **An autonomous ESP32-S3 based industrial gateway with galvanic isolation and RS-485 communication.**
 
