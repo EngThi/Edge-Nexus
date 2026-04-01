@@ -1,4 +1,7 @@
-# SHIP HARDWARE, NOT BUDGETS: Industrial Control for under $60
+> **ATTENTION REVIEWERS:**
+> I accidentally forgot to attach the ESP32 AliExpress cart proof in the official submission form. You can find the image proof directly below and in the repository at `Docs/assets/esp32_aliexpress_proof.jpg`.
+
+![AliExpress Proof](Docs/assets/esp32_aliexpress_proof.jpg)
 
 # Edge Nexus: Standalone Industrial Edge Controller
 
