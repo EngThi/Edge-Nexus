@@ -12,7 +12,7 @@ Edge Nexus is a custom-built industrial controller designed to bridge the gap be
 
 Designed by a Computer Engineering student, Edge Nexus provides a reliable, isolated brain for edge automation, telemetry, and local data logging without the need for expensive, off-the-shelf single-board computers.
 
-## 🔌 Core Hardware Features
+## Core Hardware Features
 
 - **Brain:** Powered by the **ESP32-S3 (WeAct Studio)**, providing high-performance dual-core processing, WiFi, and Bluetooth.
 - **Galvanic Isolation:** 4-channel input protection using PC817 optocouplers. This physically decouples high-voltage spikes from "dirty" industrial sensors from the sensitive MCU logic.
@@ -28,7 +28,7 @@ Designed by a Computer Engineering student, Edge Nexus provides a reliable, isol
 ## Design & Fabrication
 
 ### PCB Design (EasyEDA)
-![PCB View](Docs/assets/main_shield_3d_render.png)
+![PCB View](Docs/assets/main_shield_3d_v2.png)
 *Left: Edge Nexus V2 Standalone Controller | Right: Isolation Gap and Routing.*
 
 ### Mechanical Engineering (OnShape)
@@ -86,5 +86,4 @@ The $6.10 PCB cost uses **Global Standard Direct Line** — the most economical 
 
 ---
 
-_Developed for the Hack Club Blueprint 2026._  
-_Designed by @EngThi_
+_Developed for the Hack Club Blueprint 2026._Designed by @EngThi_
