@@ -17,13 +17,13 @@ I'm a Computer Engineering student and I wanted a reliable, isolated brain for a
 
 ## On the board
 
-- Brain: ESP32-S3 (WeAct Studio module). It handles the logic, WiFi, and Bluetooth.
-- Isolation: 4-channel input protection using PC817 optocouplers. This stops high-voltage spikes from killing the ESP32.
-- Comms: SP3485 transceiver for RS-485 / Modbus. This is the standard for industrial PLCs.
-- Power: Built-in LM2596 buck converter. You can power the whole thing from a 12-19V laptop brick.
-- Relays: Two 5V relays to switch actual loads.
-- Sensors: INA219 for power monitoring, SHT41 for temp/humidity, and a DS3231 RTC for keeping time offline.
-- Storage: MicroSD slot to save logs without needing a cloud connection.
+- ESP32-S3 (WeAct Studio module). It handles the logic, WiFi, and Bluetooth.
+- 4-channel input protection using PC817 optocouplers. This stops high-voltage spikes from killing the ESP32.
+- SP3485 transceiver for RS-485 / Modbus. This is the standard for industrial PLCs.
+- Built-in LM2596 buck converter. You can power the whole thing from a 12-19V laptop brick.
+- Two 5V relays to switch actual loads.
+- INA219 for power monitoring, SHT41 for temp/humidity, and a DS3231 RTC for keeping time offline.
+- MicroSD slot to save logs without needing a cloud connection.
 
 ## Design and Making it
 
