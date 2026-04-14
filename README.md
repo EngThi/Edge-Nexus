@@ -15,7 +15,7 @@ Edge Nexus is an industrial controller meant to bridge the gap between standard 
 
 I'm a Computer Engineering student and I wanted a reliable, isolated brain for automation and logging that doesn't cost hundreds of dollars for off-the-shelf parts.
 
-## What is on the board
+## On the board
 
 - Brain: ESP32-S3 (WeAct Studio module). It handles the logic, WiFi, and Bluetooth.
 - Isolation: 4-channel input protection using PC817 optocouplers. This stops high-voltage spikes from killing the ESP32.
