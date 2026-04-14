@@ -31,6 +31,10 @@ I'm a Computer Engineering student and I wanted a reliable, isolated brain for a
 ![PCB View](Docs/assets/main_shield_3d_v2.png)
 *V2 Standalone Controller and the routing details.*
 
+![Front HMI View](Docs/assets/download.png)
+
+![Back HMI View](Docs/assets/Back_HMI_View.png)
+
 ### Mechanicals
 I designed the enclosure in OnShape with mounting bosses and enough space for the relays and the ESP32.
 - [OnShape Public Link](https://cad.onshape.com/documents/94f51a65c203ef61216a8e76/w/3996b9a7978ffab042ea39f4/e/1a9b65c9926a8d71aaf1da83?renderMode=0&uiState=69c037fa21771c3657426373)
