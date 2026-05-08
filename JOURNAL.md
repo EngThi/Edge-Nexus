@@ -2,7 +2,7 @@
 
 _Industrial isolation and standalone control._
 
-Approximate time: **~84h**
+Approximate time: **~85h**
 
 Edge Nexus started because I wanted something closer to real industrial hardware, not only another dev board plugged into jumper wires. The main idea was isolation first: if this is going near noisy sensors, relays, long wires, or anything factory-like, the `ESP32` side cannot be directly exposed to everything.
 
@@ -151,7 +151,7 @@ Final cleanup day. Or at least "please be final" day.
 
 I fixed a collision between the MicroSD slot and the ESP32 in the 3D view, updated silkscreen labels, generated the Gerbers/BOM, and adjusted the enclosure for the new V2 board.
 
-The final hardware cost is:
+At that point, the hardware cost was:
 
 - AliExpress ESP32-S3: $6.66
 - LCSC components cart: $43.43
@@ -167,3 +167,7 @@ Timelapses:
 - [Making the pivot](https://lapse.hackclub.com/timelapse/ZSAejujQKgtY)
 
 Edge Nexus V2 is ready enough to submit. I hope this one makes the point better :)
+
+###### May 8 — Final Cart Update & Budget Drop
+*Time spent: ~1h*
+Updated the final carts before submission. The ESP32 listing changed slightly to $6.87, the LCSC components cart dropped significantly to $26.52, and I included the front HMI board in the JLCPCB order (total $9.10). The final total hardware cost is now **$42.49**. Still under $45 even with a tiny bit of breathing room :D

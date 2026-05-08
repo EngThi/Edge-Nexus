@@ -1,8 +1,3 @@
-> **ATTENTION REVIEWERS:**
-> I accidentally forgot to attach the ESP32 AliExpress cart proof in the official submission form. You can find the image proof directly below and in the repository at `Docs/assets/esp32_aliexpress_proof.jpg`.
-
-![AliExpress Proof](Docs/assets/esp32_aliexpress_proof.jpg)
-
 # Edge Nexus: Standalone Industrial Edge Controller
 
 This is a custom industrial carrier board I built for high-noise environments. It uses PC817 optocouplers for isolation and has RS-485/Modbus comms through an SP3485 chip. I wrote all the docs myself, including the 80+ hours of logs in JOURNAL.md. I optimized the budget using AliExpress and LCSC parts to keep the hardware cost under $60.
@@ -48,18 +43,21 @@ The PCB is coming bare from JLCPCB. I'm hand-soldering everything myself—optoa
 
 This is the price for the parts, not including shipping or taxes.
 
-![Shopping Cart](Docs/assets/jlcpcb_cart_v2.png)
+![Shopping Cart](Docs/assets/jlcpcb_cart_final.png)
 *PCBs from JLCPCB.*
 
-![Parts Inventory](Docs/assets/lcsc_parts_v2.png)
+![Parts Inventory](Docs/assets/lcsc_parts_final.png)
 *Parts from LCSC.*
+
+![AliExpress Proof](Docs/assets/esp32_aliexpress_proof_final.jpg)
+*ESP32-S3 from AliExpress.*
 
 | Item | Qty | From | Price |
 | :--- | :--- | :--- | :--- |
-| ESP32-S3 WeAct Studio | 1 | AliExpress | $6.66 |
-| LCSC Components Batch | 1 set | LCSC | $43.43 |
-| PCB Manufacturing | 1 set | JLCPCB | $6.10 |
-| **Total** | | | **$56.19** |
+| ESP32-S3 WeAct Studio | 1 | AliExpress | $6.87 |
+| LCSC Components Batch | 1 set | LCSC | $26.52 |
+| PCB Manufacturing (Shield + HMI) | 1 set | JLCPCB | $9.10 |
+| **Total** | | | **$42.49** |
 
 Note for people in Brazil (São Paulo): If you are around Santa Ifigênia, you can get most of the passives and connectors there for cheap. The ESP32 and LCSC orders usually stay under the tax limit if you're careful.
 

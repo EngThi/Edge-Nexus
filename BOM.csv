@@ -1,5 +1,5 @@
 Category,Quantity,Component,Designator,Manufacturer,Part Number,Supplier,Unit Price (USD),MOQ,Link
-Computing,1,ESP32-S3 WeAct Studio,U1,WeAct Studio,ESP32-S3-N16R8,AliExpress,6.66,1,https://pt.aliexpress.com/item/1005005592730189.html
+Computing,1,ESP32-S3 WeAct Studio,U1,WeAct Studio,ESP32-S3-N16R8,AliExpress,6.87,1,https://pt.aliexpress.com/item/1005005592730189.html
 Comms,1,SP3485 RS-485 Transceiver,U18,MaxLinear,C8963,LCSC,0.45,1,https://www.lcsc.com/product-detail/RS-485-RS-422-Receivers-Transceivers_MaxLinear-Exar-SP3485EN-L-TR_C6767.html
 Power,1,LM2596S-ADJ Buck Converter,U1,UMW,C347423,LCSC,0.57,1,https://www.lcsc.com/product-detail/DC-DC-Converters_UMW-友台半导体-LM2596S-ADJ-UMW_C347423.html
 Isolation,4,PC817C Optocoupler,U3-U6,GOODWORK,C3025164,LCSC,0.04,20,https://www.lcsc.com/product-detail/Optoisolators-Transistor-Photovoltaic-Output_GOODWORK-PC817C_C3025164.html
@@ -27,4 +27,5 @@ Connectors,1,CR2032 Battery Holder,BAT1,Generic,C9900018737,LCSC,0.25,1,https://
 Connectors,4,KF128-5.0-2P Screw Terminal,J2-J5,KEFA,C474950,LCSC,0.18,5,https://www.lcsc.com/product-detail/Screw-Terminal-Blocks_KEFA-KF128-5.0-2P_C474950.html
 Connectors,3,4-pin Screw Terminal (3.5mm),U19,MAX,C5349545,LCSC,0.30,1,https://www.lcsc.com/product-detail/Screw-Terminal-Blocks_MAX-MX127S-3-5-04P-GN01-CU-Y-A_C5349545.html
 Connectors,1,2x5 pin Header,U22,ZHOURI,C2977587,LCSC,0.15,1,https://www.lcsc.com/product-detail/Female-Headers_ZHOURI-2-54-2-5_C2977587.html
-PCB,1,Edge Nexus V2 PCB,Main,JLCPCB,Custom,JLCPCB,6.10,5,https://jlcpcb.com
+PCB,1,Edge Nexus V2 PCB (Shield),Main,JLCPCB,Custom,JLCPCB,7.00,5,https://jlcpcb.com
+PCB,1,Edge Nexus Front HMI PCB,HMI,JLCPCB,Custom,JLCPCB,2.10,5,https://jlcpcb.com
