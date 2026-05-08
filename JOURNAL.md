@@ -168,6 +168,8 @@ Timelapses:
 
 Edge Nexus V2 is ready enough to submit. I hope this one makes the point better :)
 
-###### May 8 — Final Cart Update & Budget Drop
+###### May 8 — Final Cart Fix, Because I Did Forget Something
 *Time spent: ~1h*
-Updated the final carts before submission. The ESP32 listing changed slightly to $6.87, the LCSC components cart dropped significantly to $26.52, and I included the front HMI board in the JLCPCB order (total $9.10). The final total hardware cost is now **$42.49**. Still under $45 even with a tiny bit of breathing room :D
+Updated the final carts before submission and then had the annoying reviewer moment: "maybe something is missing". It was. I had the Main Shield cart clean, but the Front HMI had its own little BOM with the LEDs, button, MOSFET, header and caps, and I had not reflected that properly in the root `BOM.csv`.
+
+So now the budget is honest: ESP32 from AliExpress is $6.87, Main Shield LCSC cart is $26.52, Front HMI LCSC cart is $5.53, and the selected JLCPCB boards are $11.10 because I picked the HMI with logo/sign plus the shield. Final merchandise total is **$50.02** before shipping/taxes. Still under $60, but yeah, not the fake-clean $42.49 anymore :/

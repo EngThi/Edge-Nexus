@@ -2,6 +2,10 @@
 
 This is a custom industrial carrier board I built for high-noise environments. It uses PC817 optocouplers for isolation and has RS-485/Modbus comms through an SP3485 chip. I wrote all the docs myself, including the 80+ hours of logs in JOURNAL.md. I optimized the budget using AliExpress and LCSC parts to keep the hardware cost under $60.
 
+> [!IMPORTANT]
+> A reviewer warned me that something might be missing, and yeah, they were right :/
+> I had the Main Shield BOM/carts updated, but I forgot that the Front HMI has its own BOM parts and that the JLCPCB cart had changed after I picked the logo/sign HMI board. Fixed now: `BOM.csv` includes the Main Shield + Front HMI parts, and the cart proofs below show the current totals.
+
 ![Banner](Docs/assets/assembly_view.png)
 
 ## Why I built this
@@ -44,11 +48,14 @@ The PCB is coming bare from JLCPCB. I'm hand-soldering everything myself—optoa
 
 This is the price for the parts, not including shipping or taxes.
 
-![Shopping Cart](Docs/assets/jlcpcb_cart_final.png)
-*PCBs from JLCPCB.*
+![Final JLCPCB Cart](Docs/assets/jlcpcb_cart_final.png)
+*Selected JLCPCB PCBs: shield + HMI with logo/sign. The older HMI item is still visible in the cart but is not selected.*
 
-![Parts Inventory](Docs/assets/lcsc_parts_final.png)
-*Parts from LCSC.*
+![Main Shield LCSC Cart](Docs/assets/lcsc_parts_final.png)
+*Main Shield parts from LCSC.*
+
+![Front HMI LCSC Cart](Docs/assets/lcsc_hmi_cart_final.png)
+*Front HMI parts from LCSC. One item is backordered in the screenshot, so this can still move a little.*
 
 ![AliExpress Proof](Docs/assets/esp32_aliexpress_proof_final.jpg)
 *ESP32-S3 from AliExpress.*
@@ -56,9 +63,12 @@ This is the price for the parts, not including shipping or taxes.
 | Item | Qty | From | Price |
 | :--- | :--- | :--- | :--- |
 | ESP32-S3 WeAct Studio | 1 | AliExpress | $6.87 |
-| LCSC Components Batch | 1 set | LCSC | $26.52 |
-| PCB Manufacturing (Shield + HMI) | 1 set | JLCPCB | $9.10 |
-| **Total** | | | **$42.49** |
+| Main Shield components cart | 1 set | LCSC | $26.52 |
+| Front HMI components cart | 1 set | LCSC | $5.53 |
+| PCB Manufacturing (Shield + HMI) | 1 set | JLCPCB | $11.10 |
+| **Total** | | | **$50.02** |
+
+That total is the real merchandise/cart number before shipping and taxes. It is not a perfect "one resistor costs this much" calculation, because LCSC has MOQ and stock weirdness. Still, it is the number I would rather show because it is what I actually see in the carts.
 
 Note for people in Brazil (São Paulo): If you are around Santa Ifigênia, you can get most of the passives and connectors there for cheap. The ESP32 and LCSC orders usually stay under the tax limit if you're careful.
 
