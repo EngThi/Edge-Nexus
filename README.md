@@ -24,6 +24,7 @@ I'm a Computer Engineering student and I wanted a reliable, isolated brain for a
 - Two 5V relays to switch actual loads.
 - INA219 for power monitoring, SHT41 for temp/humidity, and a DS3231 RTC for keeping time offline.
 - MicroSD slot to save logs without needing a cloud connection.
+- 40-pin expansion/service header kept for debugging, future wiring, and compatibility experiments.
 
 ## Design and Making it
 
