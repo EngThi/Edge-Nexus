@@ -20,6 +20,7 @@ I'm a Computer Engineering student and I wanted a reliable, isolated brain for a
 - INA219 for power monitoring, SHT41 for temp/humidity, and a DS3231 RTC for keeping time offline.
 - MicroSD slot to save logs without needing a cloud connection.
 - 40-pin expansion/service header kept for debugging, future wiring, and compatibility experiments.
+- Front HMI board with WS2812B status LEDs and a tactile button.
 
 ## Design and Making it
 
@@ -61,7 +62,7 @@ This is the price for the parts, not including shipping or taxes.
 
 Note for people in Brazil (São Paulo): If you are around Santa Ifigênia, you can get most of the passives and connectors there for cheap. The ESP32 and LCSC orders usually stay under the tax limit if you're careful.
 
-Check BOM.csv for the full list of all 33+ parts.
+Check BOM.csv for the full list of Main Shield and Front HMI parts.
 
 ### Shipping info
 I used Global Standard Direct Line for the PCBs, which is the cheapest tracked option to Brazil.

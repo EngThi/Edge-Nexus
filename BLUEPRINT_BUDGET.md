@@ -9,7 +9,7 @@ The total I am using for the project is the real checkout/cart cost, not a per-u
 | Vendor | What it covers | Amount |
 | :--- | :--- | :--- |
 | AliExpress | ESP32-S3 WeAct Studio module | $6.87 |
-| LCSC | Components cart (27 items) | $26.52 |
+| LCSC | Components cart for Main Shield + Front HMI parts | $26.52 |
 | JLCPCB | Edge Nexus V2 (Shield + HMI) bare PCB order | $9.10 |
 | **Total** | | **$42.49** |
 

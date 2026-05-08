@@ -27,5 +27,12 @@ Connectors,1,CR2032 Battery Holder,BAT1,Generic,C9900018737,LCSC,0.25,1,https://
 Connectors,4,KF128-5.0-2P Screw Terminal,J2-J5,KEFA,C474950,LCSC,0.18,5,https://www.lcsc.com/product-detail/Screw-Terminal-Blocks_KEFA-KF128-5.0-2P_C474950.html
 Connectors,3,4-pin Screw Terminal (3.5mm),U19,MAX,C5349545,LCSC,0.30,1,https://www.lcsc.com/product-detail/Screw-Terminal-Blocks_MAX-MX127S-3-5-04P-GN01-CU-Y-A_C5349545.html
 Connectors,1,2x5 pin Header,U22,ZHOURI,C2977587,LCSC,0.15,1,https://www.lcsc.com/product-detail/Female-Headers_ZHOURI-2-54-2-5_C2977587.html
+HMI Passives,4,100nF Capacitor,"C1,C2,C3,C4",WIMA,C19855121,LCSC,0.1346,1,https://www.lcsc.com/product-detail/C19855121.html
+HMI Connectors,1,2.54mm 2P Connector,CN1,SHOU HAN,C5368775,LCSC,0.0013,1,https://www.lcsc.com/product-detail/C5368775.html
+HMI Connectors,1,2x5 Female Header,H1,BOOMELE,C30419,LCSC,0.0096,1,https://www.lcsc.com/product-detail/C30419.html
+HMI Switches,1,B3F-4055 Tactile Switch,KEY1,OMRON,C84931,LCSC,0.023,1,https://www.lcsc.com/product-detail/C84931.html
+HMI LEDs,4,WS2812B-V5 RGB LED,"LED1,LED2,LED3,LED4",worldsemi,C2846931,LCSC,0.0142,1,https://www.lcsc.com/product-detail/C2846931.html
+HMI Discrete,1,2N7002 MOSFET,Q1,CBI,C51315010,LCSC,0.0021,1,https://www.lcsc.com/product-detail/C51315010.html
+HMI Passives,2,10kΩ Resistor,"R1,R2",CCO,C119202,LCSC,0.0016,1,https://www.lcsc.com/product-detail/C119202.html
 PCB,1,Edge Nexus V2 PCB (Shield),Main,JLCPCB,Custom,JLCPCB,7.00,5,https://jlcpcb.com
 PCB,1,Edge Nexus Front HMI PCB,HMI,JLCPCB,Custom,JLCPCB,2.10,5,https://jlcpcb.com
