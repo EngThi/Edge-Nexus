@@ -1,6 +1,6 @@
 # Edge Nexus: Standalone Industrial Edge Controller
 
-This is a custom industrial carrier board I built for high-noise environments. It uses PC817 optocouplers for isolation and has RS-485/Modbus comms through an SP3485 chip. I wrote all the docs myself, including the 80+ hours of logs in JOURNAL.md. I managed to get the hardware under $50 by sourcing directly from LCSC and AliExpress.
+This is a custom industrial carrier board I built for high-noise environments. It uses PC817 optocouplers for isolation and has RS-485/Modbus comms through an SP3485 chip. I managed to get the hardware under $50 by sourcing directly from LCSC and AliExpress.
 
 
 ## Why I built this
