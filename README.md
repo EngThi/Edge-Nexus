@@ -2,10 +2,6 @@
 
 This is a custom industrial carrier board I built for high-noise environments. It uses PC817 optocouplers for isolation and has RS-485/Modbus comms through an SP3485 chip. I wrote all the docs myself, including the 80+ hours of logs in JOURNAL.md. I managed to get the hardware under $50 by sourcing directly from LCSC and AliExpress.
 
-> [!IMPORTANT]
-> A reviewer warned me that something might be missing, and yeah, they were right :/
-> I had the Main Shield BOM/carts updated, but I forgot that the Front HMI has its own BOM parts and that the JLCPCB cart had changed after I picked the logo/sign HMI board. Fixed now: `BOM.csv` includes the Main Shield + Front HMI parts, and the cart proofs below show the current totals.
-
 
 ## Why I built this
 
