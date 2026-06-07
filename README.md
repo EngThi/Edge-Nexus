@@ -1,6 +1,6 @@
 # Edge Nexus: Standalone Industrial Edge Controller
 
-This is a custom industrial carrier board I built for high-noise environments. It uses PC817 optocouplers for isolation and has RS-485/Modbus comms through an SP3485 chip. I wrote all the docs myself, including the 80+ hours of logs in JOURNAL.md. I optimized the budget using AliExpress and LCSC parts to keep the hardware cost under $60.
+This is a custom industrial carrier board I built for high-noise environments. It uses PC817 optocouplers for isolation and has RS-485/Modbus comms through an SP3485 chip. I wrote all the docs myself, including the 80+ hours of logs in JOURNAL.md. I managed to get the hardware under $50 by sourcing directly from LCSC and AliExpress.
 
 > [!IMPORTANT]
 > A reviewer warned me that something might be missing, and yeah, they were right :/
@@ -11,7 +11,7 @@ This is a custom industrial carrier board I built for high-noise environments. I
 
 Edge Nexus is an industrial controller meant to bridge the gap between standard IoT boards and noisy factory floors. It started as a shield for bigger SBCs, but I decided to make it standalone. It focuses on actual hardware engineering rather than just plugging things into a Linux computer.
 
-I'm a Computer Engineering student and I wanted a reliable, isolated brain for automation and logging that doesn't cost hundreds of dollars for off-the-shelf parts.
+I'm a Computer Engineering student and I wanted a solid, protected brain for automation and logging that doesn't cost a fortune like those industrial PLCs you see out there.
 
 ## On the board
 
