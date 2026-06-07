@@ -153,8 +153,6 @@ Check BOM.csv
 ### Shipping info
 I used Global Standard Direct Line for the PCBs, which is the cheapest tracked option to Brazil.
 
-![JLCPCB Shipping Options](Docs/assets/jlcpcb_shipping_options.png)
-
 ## Folder Structure
 
 ```
