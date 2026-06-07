@@ -7,10 +7,10 @@ This document outlines the hardware costs for Edge Nexus. The budget is split in
 | Part | Supplier | Price (USD) |
 | :--- | :--- | :--- |
 | ESP32-S3 WeAct Studio module | AliExpress | $4.33 |
-| Main Shield components cart | LCSC | $28.43 |
-| Front HMI components cart | LCSC | $2.80 |
+| Main Shield components cart | LCSC | $26.89 |
+| Front HMI components cart | LCSC | $2.82 |
 | Edge Nexus V2 PCB order (Shield + HMI) | JLCPCB | $11.10 |
-| **Subtotal Components** | | **$46.66** |
+| **Subtotal Components** | | **$45.14** |
 
 ---
 
@@ -27,11 +27,12 @@ This document outlines the hardware costs for Edge Nexus. The budget is split in
 
 ## 3. Final Total
 
-| Total Project Cost | $46.66 (Parts) + $44.22 (Shipping/Taxes) | **$90.88** |
+| Total Project Cost | $45.14 (Parts) + $44.22 (Shipping/Taxes) | **$89.36** |
 | :--- | :--- | :--- |
 
 ## Proof of Costs (Final Carts)
 - [AliExpress ESP32 Proof](Docs/assets/esp32_aliexpress_proof_final.jpg)
 - [JLCPCB Final Cart](Docs/assets/jlcpcb_cart_final.png)
-- [LCSC Main Cart](Docs/assets/lcsc_parts_final.png)
-- [LCSC HMI Cart](Docs/assets/lcsc_hmi_cart_final.png)
+- [LCSC Main Shield Cart](Docs/assets/lcsc_parts_final.png)
+- [LCSC Front HMI Cart](Docs/assets/lcsc_hmi_cart_final.png)
+- [LCSC Optimized/Combined Cart](Docs/assets/lcsc_combined_cart.png)

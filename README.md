@@ -48,13 +48,13 @@ The PCB is coming bare from JLCPCB. I'm hand-soldering everything myself—optoa
 This is the price for the parts, not including shipping or taxes.
 
 ![Final JLCPCB Cart](Docs/assets/jlcpcb_cart_final.png)
-*Selected JLCPCB PCBs: shield + HMI with logo/sign. The older HMI item is still visible in the cart but is not selected.*
+*Selected JLCPCB PCBs: shield + HMI with logo/sign.*
 
 ![Main Shield LCSC Cart](Docs/assets/lcsc_parts_final.png)
-*Main Shield parts from LCSC.*
+*Main Shield parts from LCSC. This is the cart I submitted with the project.*
 
 ![Front HMI LCSC Cart](Docs/assets/lcsc_hmi_cart_final.png)
-*Front HMI parts from LCSC. One item is backordered in the screenshot, so this can still move a little.*
+*Front HMI parts from LCSC.*
 
 ![AliExpress Proof](Docs/assets/esp32_aliexpress_proof_final.jpg)
 *ESP32-S3 from AliExpress.*
@@ -62,10 +62,18 @@ This is the price for the parts, not including shipping or taxes.
 | Item | Qty | From | Price |
 | :--- | :--- | :--- | :--- |
 | ESP32-S3 WeAct Studio | 1 | AliExpress | $4.33 |
-| Main Shield components cart | 1 set | LCSC | $28.43 |
-| Front HMI components cart | 1 set | LCSC | $2.80 |
+| Main Shield components cart | 1 set | LCSC | $26.89 |
+| Front HMI components cart | 1 set | LCSC | $2.82 |
 | PCB Manufacturing (Shield + HMI) | 1 set | JLCPCB | $11.10 |
-| **Subtotal (Hardware Only)** | | | **$46.66** |
+| **Subtotal (Hardware Only)** | | | **$45.14** |
+
+> **Note on cost optimization:** After submitting the form, I noticed that
+> combining both LCSC carts into one order drops the total merchandise to
+> $29.71 and cuts shipping to a single $28.17 charge instead of two.
+> Here's what that looks like:
+>
+> ![Combined LCSC Cart](Docs/assets/lcsc_combined_cart.png)
+> *Shield + HMI parts in one cart — $29.71 merchandise, one shipping charge.*
 
 *(Full details with shipping and taxes in [BLUEPRINT_BUDGET.md](BLUEPRINT_BUDGET.md))*
 
@@ -73,7 +81,7 @@ That total is the real merchandise/cart number before shipping and taxes. It is 
 
 Note for people in Brazil (São Paulo): If you are around Santa Ifigênia, you can get most of the passives and connectors there for cheap. The ESP32 and LCSC orders usually stay under the tax limit if you're careful.
 
-Check BOM.csv for the full list of Main Shield and Front HMI parts.
+Check BOM.csv
 
 ### Shipping info
 I used Global Standard Direct Line for the PCBs, which is the cheapest tracked option to Brazil.
