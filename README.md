@@ -6,7 +6,6 @@ This is a custom industrial carrier board I built for high-noise environments. I
 > A reviewer warned me that something might be missing, and yeah, they were right :/
 > I had the Main Shield BOM/carts updated, but I forgot that the Front HMI has its own BOM parts and that the JLCPCB cart had changed after I picked the logo/sign HMI board. Fixed now: `BOM.csv` includes the Main Shield + Front HMI parts, and the cart proofs below show the current totals.
 
-![Banner](Docs/assets/assembly_view.png)
 
 ## Why I built this
 
@@ -38,7 +37,7 @@ I'm a Computer Engineering student and I wanted a reliable, isolated brain for a
 
 ### Mechanicals
 I designed the enclosure in OnShape with mounting bosses and enough space for the relays and the ESP32.
-- [OnShape Public Link](https://cad.onshape.com/documents/94f51a65c203ef61216a8e76/w/3996b9a7978ffab042ea39f4/e/1a9b65c9926a8d71aaf1da83?renderMode=0&uiState=69c037fa21771c3657426373)
+- [OnShape Public Link](https://cad.onshape.com/documents/763a97ddcd49a121183cadac/w/b6354cba14e3b3f32c74d1b6/e/a910c6222f3a54e8127254ee?renderMode=0&uiState=6a24c03cbd7ed56dfac8336c)
 
 ## How I'm assembling it
 
@@ -62,11 +61,13 @@ This is the price for the parts, not including shipping or taxes.
 
 | Item | Qty | From | Price |
 | :--- | :--- | :--- | :--- |
-| ESP32-S3 WeAct Studio | 1 | AliExpress | $6.87 |
-| Main Shield components cart | 1 set | LCSC | $26.52 |
-| Front HMI components cart | 1 set | LCSC | $5.53 |
+| ESP32-S3 WeAct Studio | 1 | AliExpress | $4.33 |
+| Main Shield components cart | 1 set | LCSC | $28.43 |
+| Front HMI components cart | 1 set | LCSC | $2.80 |
 | PCB Manufacturing (Shield + HMI) | 1 set | JLCPCB | $11.10 |
-| **Total** | | | **$50.02** |
+| **Subtotal (Hardware Only)** | | | **$46.66** |
+
+*(Full details with shipping and taxes in [BLUEPRINT_BUDGET.md](BLUEPRINT_BUDGET.md))*
 
 That total is the real merchandise/cart number before shipping and taxes. It is not a perfect "one resistor costs this much" calculation, because LCSC has MOQ and stock weirdness. Still, it is the number I would rather show because it is what I actually see in the carts.
 

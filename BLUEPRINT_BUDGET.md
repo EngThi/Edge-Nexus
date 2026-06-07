@@ -1,21 +1,37 @@
-# Budget Breakdown - Edge Nexus V2
+# Edge Nexus Hardware Budget
 
-All prices below are merchandise cost only. Shipping, taxes, and import fees are not counted in the Blueprint hardware total.
+This document outlines the hardware costs for Edge Nexus. The budget is split into **Component Base Prices** (the actual cost of the parts) and **Shipping & Taxes** (the fees to get them to Brazil).
 
-The total I am using for the project is the real checkout/cart cost, not a per-unit theoretical split of the LCSC minimum order quantities.
+## 1. Component Base Prices (Hardware Only)
 
-## Vendor Totals
-
-| Vendor | What it covers | Amount |
+| Part | Supplier | Price (USD) |
 | :--- | :--- | :--- |
-| AliExpress | ESP32-S3 WeAct Studio module | $6.87 |
-| LCSC | Components cart (Main Shield + Front HMI) | $32.05 |
-| JLCPCB | Edge Nexus V2 (Shield + HMI with logo) bare PCB order | $11.10 |
-| **Total** | | **$50.02** |
+| ESP32-S3 WeAct Studio module | AliExpress | $4.33 |
+| Main Shield components cart | LCSC | $28.43 |
+| Front HMI components cart | LCSC | $2.80 |
+| Edge Nexus V2 PCB order (Shield + HMI) | JLCPCB | $11.10 |
+| **Subtotal Components** | | **$46.66** |
 
-## Notes
+---
 
-- The LCSC total ($32.05) is the sum of the Main Shield cart ($26.52) and the Front HMI cart ($5.53).
-- No PCBA service is being used. The board will be hand-soldered.
-- The full part list and links are in `BOM.csv`.
-- Cart screenshots are in `Docs/assets/lcsc_parts_final.png`, `Docs/assets/lcsc_hmi_cart_final.png`, `Docs/assets/jlcpcb_cart_final.png`, and `Docs/assets/esp32_aliexpress_proof_final.jpg`.
+## 2. Shipping & Regional Taxes (Estimated)
+
+| Supplier / Fee Type | Cost (USD) |
+| :--- | :--- |
+| JLCPCB Shipping | $13.05 |
+| LCSC Shipping (Global Direct) | $31.17 |
+| AliExpress Taxes (ICMS) | $0.00 (Included in part price) |
+| **Subtotal Shipping & Taxes** | **$44.22** |
+
+---
+
+## 3. Final Total
+
+| Total Project Cost | $46.66 (Parts) + $44.22 (Shipping/Taxes) | **$90.88** |
+| :--- | :--- | :--- |
+
+## Proof of Costs (Final Carts)
+- [AliExpress ESP32 Proof](Docs/assets/esp32_aliexpress_proof_final.jpg)
+- [JLCPCB Final Cart](Docs/assets/jlcpcb_cart_final.png)
+- [LCSC Main Cart](Docs/assets/lcsc_parts_final.png)
+- [LCSC HMI Cart](Docs/assets/lcsc_hmi_cart_final.png)
